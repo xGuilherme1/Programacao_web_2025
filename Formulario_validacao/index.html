@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Validação</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="validacao.js" defer></script>
+</head>
+<body>
+    <form id="formulario">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+
+            <label>Nome Completo:
+                <input 
+                type="text" 
+                id="nome" 
+                required 
+                minlength="5" 
+                maxlength="100" 
+                placeholder="Ex: João Silva"
+                >
+            </label>
+
+            <label>Data de Nascimento:
+                <input 
+                type="date" 
+                id="dataNascimento" 
+                required
+                >
+            </label>
+
+            <label>CPF:
+                <input 
+                type="text" 
+                id="cpf" 
+                required 
+                maxlength="14" 
+                placeholder="Ex: 123.456.789-00"
+                >
+            </label>
+
+            <label>Telefone Fixo:
+                <input
+                type="text" 
+                id="telefoneFixo" 
+                required 
+                maxlength="14" 
+                placeholder="Ex: (11) 2345-6789"
+                >
+            </label>
+
+            <label>Celular:
+                <input
+                type="text" 
+                id="celular"
+                required 
+                maxlength="15"
+                placeholder="Ex: (11) 91234-5678"
+                >
+            </label>
+        </fieldset>
+
+        <fieldset id="infoMenor" style="display: none;">
+            <legend>Informações Complementares</legend>
+
+            <label>Nome do Pai:
+                <input 
+                type="text" 
+                id="nomePai"
+                minlength="5"
+                maxlength="100" 
+                placeholder="Ex: Carlos Silva"
+                >
+            </label>
+
+            <label>Nome da Mãe:
+                <input 
+                type="text" 
+                id="nomeMae" 
+                minlength="5" 
+                maxlength="100" 
+                placeholder="Ex: Maria Oliveira"
+                >
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Endereço</legend>
+
+            <label>CEP:
+                <input 
+                type="text" 
+                id="cep" 
+                required 
+                maxlength="9" 
+                placeholder="Ex: 12345-678"
+                >
+            </label>
+
+            <label>Endereço:
+                <input 
+                type="text" 
+                id="endereco" 
+                required 
+                minlength="5" 
+                maxlength="150" 
+                placeholder="Ex: Rua das Flores">
+            </label>
+
+            <label>Número:
+                <input
+                type="text" 
+                id="numero" 
+                required 
+                minlength="1" 
+                maxlength="10" 
+                placeholder="Ex: 123"
+                >
+            </label>
+
+            <label>Complemento:
+                <input 
+                type="text" 
+                id="complemento" 
+                maxlength="50" 
+                placeholder="Ex: Apto 45"
+                >
+            </label>
+
+            <label>Cidade:
+                <input 
+                type="text" 
+                id="cidade" 
+                required 
+                minlength="2" 
+                maxlength="100" 
+                placeholder="Ex: São Paulo"
+                >
+            </label>
+
+            <label>Estado:
+                <input 
+                type="text" 
+                id="estado" 
+                required 
+                minlength="2" 
+                maxlength="2" 
+                placeholder="Ex: SP"
+                >
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações da Conta</legend>
+
+            <label>Email:
+                <input 
+                type="email" 
+                id="email" 
+                required 
+                placeholder="Ex: usuario@email.com"
+                >
+            </label>
+
+            <label>Senha:
+                <input 
+                type="password" 
+                id="senha" 
+                required 
+                minlength="8" 
+                maxlength="20" 
+                placeholder="Mínimo 8 caracteres">
+            </label>
+
+            <label>Confirmar Senha:
+                <input 
+                type="password" 
+                id="confirmarSenha" 
+                required 
+                minlength="8" 
+                maxlength="20" 
+                placeholder="Repita a senha"
+                >
+            </label>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
