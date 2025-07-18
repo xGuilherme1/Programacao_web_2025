@@ -1,0 +1,26 @@
+.sobre-container {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobre-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.sobre-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #24292e;
+}
+
+.sobre-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: #444;
+}
